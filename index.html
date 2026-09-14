@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>MSA Student AI</title>
+
+        <style>
+            * {
+                  box-sizing: border-box;
+                        margin: 0;
+                              padding: 0;
+                                    font-family: Arial, sans-serif;
+                                        }
+
+                                            body {
+                                                  background: #f4f7fb;
+                                                        color: #172033;
+                                                            }
+
+                                                                header {
+                                                                      background: #172033;
+                                                                            color: white;
+                                                                                  padding: 20px;
+                                                                                        text-align: center;
+                                                                                            }
+
+                                                                                                header h1 {
+                                                                                                      font-size: 28px;
+                                                                                                            margin-bottom: 8px;
+                                                                                                                }
+
+                                                                                                                    header p {
+                                                                                                                          color: #cbd5e1;
+                                                                                                                              }
+
+                                                                                                                                  .container {
+                                                                                                                                        max-width: 900px;
+                                                                                                                                              margin: 30px auto;
+                                                                                                                                                    padding: 20px;
+                                                                                                                                                        }
+
+                                                                                                                                                            .welcome {
+                                                                                                                                                                  background: white;
+                                                                                                                                                                        padding: 25px;
+                                                                                                                                                                              border-radius: 15px;
+                                                                                                                                                                                    margin-bottom: 20px;
+                                                                                                                                                                                          box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+                                                                                                                                                                                              }
+
+                                                                                                                                                                                                  .welcome h2 {
+                                                                                                                                                                                                        margin-bottom: 10px;
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                .cards {
+                                                                                                                                                                                                                      display: grid;
+                                                                                                                                                                                                                            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                                                                                                                                                                                                                                  gap: 15px;
+                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                          .card {
+                                                                                                                                                                                                                                                background: white;
+                                                                                                                                                                                                                                                      padding: 25px;
+                                                                                                                                                                                                                                                            border-radius: 15px;
+                                                                                                                                                                                                                                                                  text-align: center;
+                                                                                                                                                                                                                                                                        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                .card h3 {
+                                                                                                                                                                                                                                                                                      margin: 10px 0;
+                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                              .card p {
+                                                                                                                                                                                                                                                                                                    color: #64748b;
+                                                                                                                                                                                                                                                                                                          margin-bottom: 15px;
+                                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                                                  button {
+                                                                                                                                                                                                                                                                                                                        background: #2563eb;
+                                                                                                                                                                                                                                                                                                                              color: white;
+                                                                                                                                                                                                                                                                                                                                    border: none;
+                                                                                                                                                                                                                                                                                                                                          padding: 12px 20px;
+                                                                                                                                                                                                                                                                                                                                                border-radius: 8px;
+                                                                                                                                                                                                                                                                                                                                                      cursor: pointer;
+                                                                                                                                                                                                                                                                                                                                                            font-size: 15px;
+                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                    button:hover {
+                                                                                                                                                                                                                                                                                                                                                                          background: #1d4ed8;
+                                                                                                                                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                                                                                                                                                  footer {
+                                                                                                                                                                                                                                                                                                                                                                                        text-align: center;
+                                                                                                                                                                                                                                                                                                                                                                                              padding: 30px;
+                                                                                                                                                                                                                                                                                                                                                                                                    color: #64748b;
+                                                                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                                                                          </style>
+                                                                                                                                                                                                                                                                                                                                                                                                           </head>
+
+                                                                                                                                                                                                                                                                                                                                                                                                          <body>
+
+                                                                                                                                                                                                                                                                                                                                                                                                            <header>
+                                                                                                                                                                                                                                                                                                                                                                                                                <h1>MSA Student AI</h1>
+                                                                                                                                                                                                                                                                                                                                                                                                                    <p>AI-Powered Student Revision Platform</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                      </header>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                        <main class="container">
+
+                                                                                                                                                                                                                                                                                                                                                                                                                            <section class="welcome">
+                                                                                                                                                                                                                                                                                                                                                                                                                                  <h2>Welcome to MSA Student AI 👋</h2>
+                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                Your intelligent study partner for learning, revision,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        questions and exam preparation.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                              </p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </section>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <section class="cards">
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class="card">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <h3>🤖 AI Tutor</h3>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>Ask questions and get help with your studies.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <button onclick="openTutor()">Open AI Tutor</button>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <div class="card">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <h3>📚 Revision</h3>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>Review important topics and study materials.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <button>Start Revision</button>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class="card">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <h3>📝 Quiz</h3>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>Test your knowledge with practice questions.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <button>Take Quiz</button>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="card">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <h3>🎯 Exam Prep</h3>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>Prepare yourself for your next examination.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <button>Start Preparation</button>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </section>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </main>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <footer>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>© 2026 MSA Student AI — Built by MSA Feissal</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </footer>
+<!-- AI TUTOR SCREEN -->
+<section id="tutorScreen" style="
+  display:none;
+  background:white;
+  max-width:900px;
+  margin:30px auto;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+">
+
+  <h2 style="margin-bottom:10px;">🤖 MSA AI Tutor</h2>
+
+  <p style="color:#64748b; margin-bottom:20px;">
+    Ask your AI Tutor anything about your studies.
+  </p>
+
+  <textarea
+    id="questionInput"
+    placeholder="Type your question here..."
+    style="
+      width:100%;
+      height:120px;
+      padding:15px;
+      border:1px solid #cbd5e1;
+      border-radius:10px;
+      font-size:16px;
+      resize:none;
+    "
+  ></textarea>
+
+  <br><br>
+
+  <button onclick="askTutor()">Ask AI Tutor</button>
+
+  <div id="tutorAnswer" style="
+    margin-top:20px;
+    padding:20px;
+    background:#f4f7fb;
+    border-radius:10px;
+    display:none;
+  "></div>
+
+  <br>
+
+  <button onclick="closeTutor()" style="background:#64748b;">
+    ← Back to Dashboard
+  </button>
+
+</section>
+
+<script>
+
+function openTutor() {
+  document.getElementById("tutorScreen").style.display = "block";
+
+  document.querySelector(".container").style.display = "none";
+
+  window.scrollTo(0, 0);
+}
+
+function closeTutor() {
+  document.getElementById("tutorScreen").style.display = "none";
+
+  document.querySelector(".container").style.display = "block";
+
+  window.scrollTo(0, 0);
+}
+
+function askTutor() {
+
+  const question = document.getElementById("questionInput").value;
+
+  const answer = document.getElementById("tutorAnswer");
+
+  if (question.trim() === "") {
+    answer.style.display = "block";
+    answer.innerHTML = "⚠️ Please type a question first.";
+    return;
+  }
+
+  answer.style.display = "block";
+
+  answer.innerHTML = `
+    <strong>🤖 AI Tutor:</strong>
+    <br><br>
+    Your question has been received.
+    <br><br>
+    🔧 The real AI connection will be added in the next step.
+  `;
+}
+
+</script> 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </body>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </html>
